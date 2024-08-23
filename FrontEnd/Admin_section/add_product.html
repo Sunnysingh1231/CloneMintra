@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product</title>
+    <link rel="stylesheet" href="/FrontEnd/Admin_section/row.css">
+    <link rel="stylesheet" href="/FrontEnd/Admin_section/add_product.css">
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row">
+          <!-- Sidebar -->
+            <div class="col-md-3 sidebar">
+                <div class="a1">
+                    <div class="logo">
+                        <img src="/FrontEnd/images/cMlogo04.png">
+                    </div>
+                    <ul class="nav flex-column">
+                        <li class="nav-item">
+                            <a class="nav-link " href="./dashboard.html">Dashboard</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link " href="./userdetails.html">Users</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link active" href="./add_product.html">Product</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./AddBus.html">Add New Buses</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="./route.html">Routes</a>
+                        </li>
+                        <li class="nav-item">
+                            <a id="logout" class="nav-link" href="#" data-toggle="modal" data-target="#logoutModal">
+                                <i class="fas fa-sign-out-alt"></i> Logout
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <h1 class="headingh1">Products</h1>
+<!-------------------- Control -->
+            <div class="c1">
+                <div class="d">
+                    <h3 style="text-align: center; font-size: 25px; margin-bottom: 0px;">Control</h3>
+                    <hr>
+                    <ul class="e">
+                        <li class="allProduct"><a href="">All product</a></li>
+                        <li class="addproduct"><a href="">Add product</a></li>
+                        <li class="updateProducts"><a href="">Modify product</a></li>
+                        <li><a href="">Product by Id</a></li>
+                    </ul>
+                </div>
+            </div>
+<!-- --------------All Products Section--------------- -->
+            <div class="datasec">
+                <h3 >All Products</h3>
+                <table class="dform">
+                    <thead>
+                        <th>S.N.</th>
+                        <th>Image</th>
+                        <th>Brand</th>
+                        <th>Category</th>
+                        <th>Type</th>
+                        <th>M. Price</th>
+                        <th>S. Price</th>
+                        <th>Delete</th>
+                    </thead>
+                    <tbody class="dproduct">
+
+                    </tbody>
+                </table>
+            </div>
+<!-- -------Add Product Section-------------------- -->
+            <div class="addpro ">
+                <h3>Add Product</h3>
+                <form class="add1">
+                    <label for="" class="add2">Product Image</label>
+                    <input type="text" class="add3 add9" id="add3" placeholder="Image Link" required>
+
+                    <label for="" class="add2">Name</label>
+                    <input type="text" class="add4 add9" id="add4" placeholder="Product Name" required>
+
+                    <label for="" class="add2">Category</label>
+                    <input type="text" class="add5 add9" id="add5" placeholder="Product Category" required>
+
+                    <label for="" class="add2">Type</label>
+                    <input type="text" class="add6 add9" id="add6" placeholder="Product Type" required>
+
+                    <label for="" class="add2">Market Price</label>
+                    <input type="number" class="add7 add9" id="add7" placeholder="Market price" required>
+
+                    <label for="" class="add2">Sale Price</label>
+                    <input type="number" class="add8 add9" id="add8" placeholder="Sale Price" required>
+
+                    <input type="submit" class="add9 add10">
+                </form>
+            </div>
+
+<!-- -------Modify Product Section-------------------- -->
+
+            <div class="modifypro ">
+                <h3>Modify Product</h3>
+
+                <div class="mod1">
+                    <!-- <div> -->
+                        <label for="" class="mod3">Product Id</label>
+                        <input type="number" class="mod2" placeholder="Enter Product Id" required>
+                    <!-- </div> -->
+                    <button class="mod4">Find</button>
+                </div>
+                
+
+                <form class="add1 mod11">
+
+                    <label for="" class="add2">Product Image</label>
+                    <input type="text" class="add3 add9" id="mod5" placeholder="Image Link" required>
+
+                    <label for="" class="add2">Name</label>
+                    <input type="text" class="add4 add9" id="mod6" placeholder="Product Name" required>
+
+                    <label for="" class="add2">Category</label>
+                    <input type="text" class="add5 add9" id="mod7" placeholder="Product Category" required>
+
+                    <label for="" class="add2">Type</label>
+                    <input type="text" class="add6 add9" id="mod8" placeholder="Product Type" required>
+
+                    <label for="" class="add2">Market Price</label>
+                    <input type="number" class="add7 add9" id="mod9" placeholder="Market price" required>
+
+                    <label for="" class="add2">Sale Price</label>
+                    <input type="number" class="add8 add9" id="mod10" placeholder="Sale Price" required>
+
+                    <input type="submit" class="add9 add10 mod12">
+                </form>
+            </div>
+        </div>
+    </div>
+</body>
+<script src="/FrontEnd/Admin_section/add_product.js"></script>
+</html>

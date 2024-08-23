@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cosmos All about fashion</title>
+    <link rel="stylesheet" href="registerPage.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="subcont">
+            <div class="imgcont">
+                <img src="/images/cMlogo.jpg" alt="">
+            </div>
+            <div class="headingh3">
+                <h2>Sign in</h2>
+            </div>
+            <div class="inpcredential">
+                <p>Name</p>
+                <input class="nametype" type="text" placeholder="Enter your name here" required>
+                <div>
+                    <p>Mobile No.</p>
+                    <div class="mobtype" >
+                        <span>+91</span>
+                        <input id="novalue" type="number" maxlength="10" pattern="\d{10}" required placeholder="Enter your mobile number here">
+                    </div>
+                </div>
+                <p>Password</p>
+                <input type="password" class="nametype" placeholder="Enter your Password here" minlength="8">
+            </div>
+            <div class="checkbox">
+                <input id="confcheck" type="checkbox"><label id="subscribeLabel" for="subscribe" >I agree to the <a href="">Terms of Use</a> & <a href="">Privacy Policy</a></label>
+            </div>
+            <div class="button">
+                <button id="submittbut"><h3>Get OTP</h3></button>
+            </div>
+            <div class="otpsection">
+                <p>OTP</p>
+                <input type="number" placeholder="Enter your otp here">
+            </div>
+            <div class="subotpbutton">
+                <button id="submittbut"><h3>Login</h3></button>
+            </div>
+            <div class="mediaopt">
+                <p style="color: rgb(197, 8, 8);">Or continue with</p>
+                <div class="mideaimg">
+                    <a href="file:///C:/Users/asus/OneDrive/Desktop/masai/prickly-expert-9128/conju.html"><img src="/images/apple.png" alt=""></a>
+                    <a href="/index.html"><img src="/images/Facebook.png" alt=""></a>
+                    <a href="https://www.google.com/"><img src="/images/google.png" alt=""></a>
+                  </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+let Nametype = document.getElementsByClassName('nametype')[0];
+let SubButt = document.getElementById("submittbut")
+let InputNo = document.getElementById("novalue")
+let ConfCheck = document.getElementById("confcheck")
+let label = document.getElementById("subscribeLabel")
+let checkbox =document.getElementsByClassName("checkbox")[0]
+let otpsection = document.getElementsByClassName("otpsection")[0]
+let subotpbutton = document.getElementsByClassName("subotpbutton")[0]
+
+SubButt.addEventListener("click",function(){
+    console.log(Nametype.value)
+
+    if(ConfCheck.checked){
+        let otp = Math.floor(100000+ Math.random()*900000)
+        console.log(otp);
+        alert(otp)
+        checkbox.remove();
+        SubButt.remove();
+        subotpbutton.classList.add("add")
+        otpsection.classList.add("add")
+    }
+    else{   
+        // alert("jhbd fuguernivh")
+        label.classList.add("error")
+    }
+
+})
+
+
+</script>
+</html>
+<!-- ../Login_page/login.html -->
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Overlay on Image</title>
+    <style>
+        .container {
+            position: relative; /* Establishes a containing block for absolutely positioned elements */
+            width: 300px; /* Adjust to your image's dimensions */
+            height: 200px; /* Adjust to your image's dimensions */
+        }
+
+        .background-image {
+            width: 100%; /* Make sure the image takes up the full width of the container */
+            height: 100%; /* Make sure the image takes up the full height of the container */
+            display: block; /* Ensures no extra space below the image */
+        }
+
+        .overlay {
+            position: absolute; /* Position this div absolutely within its container */
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(255, 0, 0, 0.5); /* Semi-transparent background for the overlay */
+            color: white; /* Text color */
+            display: flex; /* Flexbox for centering text */
+            align-items: center; /* Vertically center text */
+            justify-content: center; /* Horizontally center text */
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <img src="https://via.placeholder.com/300x200" alt="Your Image" class="background-image">
+        <div class="overlay">This div is on top of the image</div>
+    </div>
+</body>
+</html>

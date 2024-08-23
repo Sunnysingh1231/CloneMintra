@@ -1,0 +1,79 @@
+/* styles.css */
+.container-fluid {
+    background-color: #fbf2e3;
+    height: 100%;
+    /* display: flex; */
+  }
+
+  .row{
+    /* border: 2px solid red; */
+    display: flex;
+  }
+  
+  .sidebar {
+    padding: 20px;
+   min-height: 100%;
+   background-color: #6f5a36;
+   min-height: 100vh; /* Set minimum height of sidebar to 100% viewport height */
+   flex: 0 0 25%; /* Set the sidebar to occupy 25% of the container width */
+   display: flex;
+   flex-direction: column;
+   width: 20%;
+   /* border: 2px solid red; */
+  }
+  
+  .sidebar .nav {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+  }
+  .a1{
+    /* border: 2px solid red; */
+  }
+  .logo{
+    padding: 0% 30%;
+  }
+  .logo img {
+    width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto 20px;
+    background-color: #d5d5d5;
+    border-radius: 10px 30px;
+  
+  }
+  #sidebar1{
+    position: sticky;
+    top: 0;
+    height: 100%;
+    overflow-y: auto;
+  }
+  .sidebar ul.nav {
+    padding-left: 0;
+  }
+  
+  .sidebar .nav-link {
+    color: rgb(0, 0, 0); /* Change navigation link color to white for better contrast */
+    padding: 10px 20px;
+    display: block;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: 400ms;
+  }
+  
+  .sidebar .nav-link:hover {
+    background-color: #84a3dc;    color: rgba(5, 5, 5, 0.925);
+    box-shadow:  #d5d5d5 5px 5px 0px;
+    transition: 400ms;
+  }
+  .active{
+    box-shadow:  #d6d6d6 5px 5px 0px 0px;
+    background-color: #a4c3fd; /* Use a complementary color for the hover background */
+    color: white;
+  }
+.headingh1{
+    margin: 30px 0px 0px 40px;
+    font-size: 40px;
+}
